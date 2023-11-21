@@ -1,0 +1,19 @@
+image: babidi34/debian-docker:debian-11
+
+services:
+  - docker:dind
+
+variables:
+  DOCKER_HOST: tcp://docker:2375
+  DOCKER_DRIVER: overlay2
+
+stages:
+  - test_docker_compose
+
+test_docker_compose:
+  stage: test_docker_compose
+  script: bash setup.sh
+  only:
+    - master
+  tags:
+    - docker
