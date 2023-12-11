@@ -86,5 +86,5 @@ Using these data volumes ensures that your services' data and configuration sett
 
 
 ## License
-An original project by babidi34, remastered by toinoux38
+An original project by babidi34, remastered by Houllier Antoine
 This project is provided under the MIT License.
